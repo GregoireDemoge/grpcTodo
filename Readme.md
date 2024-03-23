@@ -11,11 +11,12 @@ This should take between one to two hours.
 
 For the front-end, you can use the framework of your choice (React, Vue, or just JS). 
 
-We strongly advise you NOT to use Svelte, even if that's what we use with FullEnrich, because there is a poorly documented bug between Vite and gRPC web. We obviously fixed it with FullEnrich, but this can make this needlessly hard.
+We strongly advise you NOT to use Svelte, even if that's what we use with FullEnrich. There is a poorly documented bug between Vite and gRPC web. We fixed it with FullEnrich, but this can make your test needlessly hard.
 
-The goal of this test is not to check if you have the JS level to do that. This shouldn't be an issue
-. 
-We expect you to never have worked with gRPC-web in the past, and the challenge is more on:
+
+The goal of this test is not to check if you have the JS level to do that. This shouldn't be an issue.
+
+We expect you to never have worked with gRPC-web in the past, and the challenge lies in:
 * Finding how gRPC-web works
 * Making it work on your machine
 
@@ -32,4 +33,5 @@ sudo docker-compose up -d
 
 ### Notes 
 The GO Server already has an Envoy proxy setup. No need to set it up yourself.
+
 Restarting the server will flush the memory of all previously created items.

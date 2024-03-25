@@ -1,7 +1,0 @@
-version: '2.4'
-services:
-  todo:
-    build: .
-    ports: 
-      - 50051:50051
-
